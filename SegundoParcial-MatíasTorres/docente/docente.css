@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Merriweather', serif;
+    font-family: 'Roboto Slab', serif;
+}
+
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+}
+
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #F4F3EE;
+}
+
+#mainHeader {
+    background-color: #FF7518;
+    padding: 3vh;
+}
+
+#logo {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+#nombreWeb {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-top: 2vh;
+    font-family: 'Abel', sans-serif;
+    font-size: 4vh;
+}
+
+#saludo {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-top: 5vh;
+}
+
+#encabezado {
+    background-color: #BCB8B1;
+    padding: 10vh;
+    margin: 10vh;
+    border-radius: 12px;
+}
+
+#textoBienvenidaDocente {
+    text-align: center;
+    font-size: 4vh;
+    margin-top: 10vh;
+    padding: 5vh;
+    background-color: #463F3A;
+}
+
+#docente{
+    background-color: #BCB8B1;
+    margin: 15vh;
+    padding: 5vh;
+    border-radius: 12px;
+    border: 3px solid #463F3A;
+}
+
+#fotoDePerfil{
+    display: grid;
+    justify-items: center;
+}
+
+#descripciónDocente{
+    display: grid;
+    justify-items: start;
+    margin-top: 25vh;
+}
+
+#clasesIntro{
+    text-align: center;
+    font-size: 3vh;
+    text-decoration: underline;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    padding: 5vh;
+    background-color: #463F3A;
+}
+
+.tarjetaLunes{
+    background-color: #A5C5EA;
+
+}
+
+.tarjetaMiércoles{
+    background-color: #639BDA;
+}
+
+.tarjetaJueves{
+    background-color: #2D71BF;
+}
+
+.tarjetaViernes{
+    background-color: #1D4A7D;
+}
+
+.tarjetaSábado{
+    background-color: #0D233B;
+}
+
+.tarjetaLunes, .tarjetaMiércoles, .tarjetaJueves, .tarjetaViernes, .tarjetaSábado {
+    display: grid;
+    justify-items: center;
+    padding: 10vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.tarjetaViernes, .tarjetaSábado{
+    margin-left: 10vh;
+    margin-right: 10vh;
+    margin-bottom: 10vh;
+}
+
+.tarjetaLunes:hover, .tarjetaMiércoles:hover, .tarjetaJueves:hover, .tarjetaViernes:hover, .tarjetaSábado:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+h3{
+    margin-bottom: 3vh;
+    text-decoration: underline;
+}
+
+.img{
+    border: 3px solid #F4F3EE;
+}
+
+.descripciónClase {
+    padding: 5vh;
+}
+
+ul{
+    list-style-image: url('https://img.icons8.com/color/22/gear.png');
+}
+
+h4{
+    margin-bottom: 3vh;
+    text-align: center;
+}
+
+
+footer {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    gap: 1vh;
+    background-color: #463F3A;
+    color: #F0EBD8;
+}
+
+a {
+    color: #F0EBD8;
+}

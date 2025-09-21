@@ -1,0 +1,365 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Merriweather', serif;
+    font-family: 'Roboto Slab', serif;
+}
+
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+}
+
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #F4F3EE;
+}
+
+#mainHeader {
+    background-color: #FF7518;
+    padding: 3vh;
+}
+
+#logo {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+#nombreWeb {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-top: 2vh;
+    font-family: 'Abel', sans-serif;
+    font-size: 4vh;
+}
+
+#saludo {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-top: 5vh;
+}
+
+#encabezado {
+    background-color: #BCB8B1;
+    padding: 10vh;
+    margin: 10vh;
+    border-radius: 12px;
+}
+
+#textoBienvenidaAlumno {
+    text-align: center;
+    font-size: 4vh;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    padding: 5vh;
+    background-color: #0818A8;
+}
+
+#cronograma {
+    background-color: #BCB8B1;
+}
+
+thead {
+    background-color: #F4F3EE;
+    color: #463F3A;
+}
+
+th {
+    padding: 2vh;
+    border: 2px solid #F4F3EE;
+    color: #463F3A;
+}
+
+td {
+    padding: 2vh;
+    border: 2px solid #F4F3EE;
+    color: #463F3A;
+    text-align: center;
+}
+
+button {
+    background-color: #0818A8;
+    border: 2px solid #F4F3EE;
+    border-radius: 12px;
+    padding: 1vh;
+}
+
+.button{
+    border: none;
+}
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border: 2px solid #F4F3EE;
+        margin-bottom: 2vh;
+    }
+
+    td {
+        border: 2px solid #F4F3EE;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    td:nth-of-type(1):before {
+        content: "Clase";
+    }
+
+    td:nth-of-type(2):before {
+        content: "Comisión";
+    }
+
+    td:nth-of-type(3):before {
+        content: "Materia";
+    }
+
+    td:nth-of-type(4):before {
+        content: "Día";
+    }
+
+    td:nth-of-type(5):before {
+        content: "Hora";
+    }
+
+    td:nth-of-type(6):before {
+        content: "Docente";
+    }
+
+    td:nth-of-type(7):before {
+        content: "Modalidad";
+    }
+
+    td:nth-of-type(8):before {
+        content: "Aula";
+    }
+
+    td:nth-of-type(9):before {
+        content: "Observaciones";
+    }
+
+}
+
+#charlaAutos {
+    background-color: #E5E4E2;
+    color: #463F3A;
+    border: 2px solid #463F3A;
+    border-radius: 12px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+#charlaAutoTitulo{
+    display: grid;
+    justify-items: center;
+    margin-top: 4vh;
+    text-decoration: underline;
+}
+
+#charlaAutoDesarrollo{
+    display: grid;
+    text-align: justify;
+}
+
+
+#seminarioPrótesis {
+    background-color: #C0C0C0;
+    color: #463F3A;
+    border: 2px solid #463F3A;
+    border-radius: 12px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+#charlaPrótesisTitulo{
+    display: grid;
+    justify-items: center;
+    margin-top: 4vh;
+    text-decoration: underline;
+}
+
+#charlaPrótesisDesarrollo{
+    display: grid;
+    text-align: justify;
+}
+
+
+#charlaÉtica {
+    background-color: #818589;
+    color: #463F3A;
+    border: 2px solid #463F3A;
+    border-radius: 12px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+#charlaÉticaTitulo{
+    display: grid;
+    justify-items: center;
+    margin-top: 4vh;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#charlaÉticaDesarrollo{
+    display: grid;
+    text-align: justify;
+}
+
+.img{
+    margin-top: 2vh;
+    border: 2px solid #6F4E37;
+}
+
+#lateralLogin{
+    background-color: #0818A8;
+    display: grid;
+    align-items: center;
+    margin-top: 5vh;
+    padding: 10vh;
+}
+
+h4{
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+#inscripciones{
+    display: grid;
+}
+
+.text{
+    margin-bottom: 1vh;
+}
+
+input{
+    border-radius: 12px;
+    padding: 1vh;
+}
+
+textarea{
+    border-radius: 12px;
+    padding: 2vh;
+    margin-bottom: 2vh;
+}
+
+datalist, input {
+    margin-bottom: 3vh;
+}
+
+#reservarCupo{
+    margin-top: 2vh;
+    background-color: #FF7518;
+    border: 2px solid #F4F3EE;
+    border-radius: 12px;
+    margin-left: 20vh;
+    margin-right: 20vh;
+    padding: 2vh;
+}
+
+footer {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    gap: 1vh;
+    background-color: #463F3A;
+    color: #F0EBD8;
+}
+
+a {
+    color: #F0EBD8;
+}

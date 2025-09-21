@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Geonosis robótica | Alumnos</title>
+    <link rel="icon" href="https://img.icons8.com/ios-filled/50/robot.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel=stylesheet href="alumno.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Abel&family=Lato&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="row" id="mainHeader">
+        <picture class="col-1" id="logo">
+            <source srcset="https://img.icons8.com/ultraviolet/50/bot.png" media="(max-width: 400px)">
+            <source srcset="https://img.icons8.com/ultraviolet/100/bot.png" alt="bot">
+            <img src="https://img.icons8.com/ultraviolet/100/bot.png" alt="bot" style="max-width:80%;height:auto;"
+                id="bot">
+        </picture>
+
+        <header class="col-9" id="nombreWeb">
+            <h1>Geonosis robótica</h1>
+        </header>
+
+        <div class="col-2" id="saludo">
+            <h3></h3>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-12" id="textoBienvenidaAlumno">
+            <h2></h2>
+        </div>
+    </div>
+
+    <div id="cronograma" class="col-12">
+        <table>
+            <thead>
+                <tr>
+                    <th>Clase</th>
+                    <th>Comisión</th>
+                    <th>Materia</th>
+                    <th>Día</th>
+                    <th>Hora</th>
+                    <th>Docente</th>
+                    <th>Modalidad</th>
+                    <th>Aula</th>
+                    <th>Observaciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>03</td>
+                    <td>Robótica</td>
+                    <td>Lunes</td>
+                    <td>08:00-12:00</td>
+                    <td>Analía Paez</td>
+                    <td>Presencial</td>
+                    <td>06</td>
+                    <td>Leer capítulo 5 y realizar la guía de preguntas</td>
+                    <td class="button">
+                        <button>Cancelar clase</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>05</td>
+                    <td>Introducción a la Programación</td>
+                    <td>Miércoles</td>
+                    <td>18:00-22:00</td>
+                    <td>Fausto Toledo</td>
+                    <td>Virtual</td>
+                    <td>---</td>
+                    <td>Realizar la guía práctica N°6</td>
+                    <td class="button">
+                        <button>Cancelar clase</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>01</td>
+                    <td>Desarrollo de IA</td>
+                    <td>Jueves</td>
+                    <td>08:00-12:00</td>
+                    <td>Julieta López</td>
+                    <td>Presencial</td>
+                    <td>03</td>
+                    <td>Mirar los videos del archivo N°7</td>
+                    <td class="button">
+                        <button>Cancelar clase</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>03</td>
+                    <td>Taller de robótica</td>
+                    <td>Viernes</td>
+                    <td>14:00-18:00</td>
+                    <td>Franco Vizcarra</td>
+                    <td>Presencial</td>
+                    <td>Laboratorio de robótica</td>
+                    <td>Llevar la maqueta del autito</td>
+                    <td class="button">
+                        <button>Cancelar clase</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <div id="eventos" class="row">
+        <div id="charlasYSeminarios" class="col-8">
+            <div class="row" id="charlaAutos">
+                <div class="col-6" id="charlaAutoTitulo">
+                    <h3>Charla de transporte automatizado</h3>
+                    <img src="https://cdn.pixabay.com/photo/2016/12/16/17/54/bmw-1911913_1280.jpg" class="img"
+                        alt="bmwInteligente" style="max-width: 50%; height: auto;">
+                </div>
+                <div class="col-6" id="charlaAutoDesarrollo">
+                    <p>Con los avances recientes de parte de empresas como Tesla, el panorama de poder viajar por medio
+                        de
+                        vehículos personales sin necesidad de conducirlos nosotros mismos es algo más cercano de lo
+                        esperado.
+                        Como cualquier desarrollo tecnológico, esto plantea tanto nuevos desafíos y posibilidades, como
+                        riesgos a tener en cuenta a la hora de su desarrollo. ¿Quieres conocer cuáles son y qué
+                        herramientas
+                        son necesarias para poder participar en el desarrollo de este campo relativamente nuevo?
+                        Entonces
+                        esta charla es para vos.
+                    </p>
+                </div>
+            </div>
+
+            <div id="seminarioPrótesis" class="row">
+                <div class="col-6" id="charlaPrótesisTitulo">
+                    <h3>Seminario de armado de prótesis</h3>
+                    <img src="https://cdn.pixabay.com/photo/2020/03/05/16/56/engineer-4904909_1280.jpg"
+                        alt="prótesisDeBrazo" class="img" style="max-width: 50%; height: auto;">
+                </div>
+                <div class="col-6" id="charlaPrótesisDesarrollo">
+                    <p>Si bien el uso de prótesis lleva siendo utilizado durante un extenso periodo de tiempo, es en los
+                        tiempos recientes que las mismas han sufrido un desarrollo técnico notable al permitir a quienes
+                        las
+                        usan el emplearlas tal y como antes operaba el miembro que antes estaba en su lugar. Pero ¿cómo
+                        se
+                        desarrollan estas prótesis? ¿en cuánto tiempo? ¿qué insumos son necesarios? ¿cómo es el proceso
+                        de
+                        armado? Entre otras preguntas, son las que responderemos en este seminario.</p>
+                </div>
+            </div>
+
+            <div id="charlaÉtica" class="row">
+                <div class="col-6" id="charlaÉticaTitulo">
+                    <h3>Charla sobre ética en el campo de la robótica</h3>
+                    <img src="https://cdn.pixabay.com/photo/2021/12/16/17/28/accounting-6874916_1280.jpg"
+                        alt="éticaEnRobótica" class="img" style="max-width: 50%; height: auto;">
+                </div>
+                <div class="col-6" id="charlaÉticaDesarrollo">
+                    <p>A pesar de que el campo de la robótica nos ha permitido llevar a cabo numerosos avances que han
+                        acelerado tanto nuestra eficiencia como nuestro progreso tecnológico y productivo, entre otras
+                        áreas, viene a su vez
+                        con diversos planteos éticos. El valle de lo inquietante (fenómeno que genera rechazo al ver
+                        algo
+                        similar a lo humano, pero que no lo es), el temor clásico en la ciencia ficción de una rebelión
+                        de
+                        los autómatas, las consecuencias en el mercado laboral de la automatización, entre otros temas,
+                        serán debatidos en esta charla, con el fin de concientizar a nuestro asistentes en la toma de
+                        decisiones adecuada teniendo en cuenta los diversos factores morales.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4" id="lateralLogin">
+            <h4>¿Te gustaría inscribirte en alguna charla y/o seminario?</h4>
+            <form id="inscripciones">
+                <label for="charlasYSeminarios" class="text">Seleccionar charla/seminario:</label>
+                <input list="opciones" id="opcionesDeActividad" onfocus="this.value=''" name="opcionesDeActividad"
+                    placeholder="Seleccionar evento...">
+                <datalist id="opciones">
+                    <option value="Charla de transporte automatizado"></option>
+                    <option value="Seminario de armado de prótesis"></option>
+                    <option value="Charla sobre ética en el campo de la robótica"></option>
+                </datalist>
+
+                <label for="horarios" class="text">Seleccionar día/horario:</label>
+                <input list="opcionesHorario" id="opcionesDeHorario" onfocus="this.value=''" name="opcionesDeHorario"
+                    placeholder="Seleccionar día/horario...">
+                <datalist id="opcionesHorario">
+                    <option value="Martes 21/11 - 10:00 | Charla de transporte automatizado"></option>
+                    <option value="Jueves 23/11 - 16:00 | Charla sobre ética en el campo de la robótica"></option>
+                    <option value="Sábado 25/11 - 14:00 | Seminario de armado de prótesis"></option>
+                    <option value="Lunes 27/11 - 12:00 | Seminario de armado de prótesis"></option>
+                    <option value="Miércoles 29/11 - 18:00 | Charla de transporte automatizado"></option>
+                    <option value="Viernes 1/12 - 10:00 | Charla sobre ética en el campo de la robótica"></option>
+                    <option value="Martes 5/12 - 14:00 | Charla sobre ética en el campo de la robótica"></option>
+                    <option value="Miércoles 6/12 - 12:00 | Seminario de armado de prótesis"></option>
+                    <option value="Jueves 7/12 - 18:00 | Charla de transporte automatizado"></option>
+                </datalist>
+
+                <label for="email" class="text">Ingresa tu email:</label>
+                <input type="email" id="inscripciónEmail" placeholder="Ingresa tu email...">
+
+                <label for="nroTel" class="text">Ingresa tu número de celular (opcional):</label>
+                <input type="tel" id="inscripciónNroCel" placeholder="Ingresa tu número de celular...">
+
+                <label for="observaciones" class="text">Dejanos tus observaciones (opcional):</label>
+                <textarea id="observaciones" placeholder="Dejanos tu observación..."></textarea>
+
+                <input type="submit" value="Reservar cupo" id="reservarCupo">
+
+            </form>
+        </div>
+
+    </div>
+
+    <footer class="col-12">
+        <p>© 2023 Matías Torres</p>
+
+        <a href="https://icons8.com"> Robot icon by Icons8</a>
+
+        <a href="mailto:matiasdavidt@gmail.com">Contacto</a>
+
+        <a href="../index/index.html">Volver al home</a>
+
+    </footer>
+
+    <script src="./alumno.js"></script>
+
+</body>
+
+
+</html>
